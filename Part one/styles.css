@@ -1,0 +1,122 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+.cards__container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.cards {
+  padding: 30px;
+}
+
+.cards__container {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+
+  gap: 40px;
+}
+
+@media screen and (min-width: 996px) {
+  .cards__container {
+    flex-direction: row;
+  }
+}
+
+.card {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+  color: #FFF;
+  transition: 0.2s;
+  transition-delay: 0.1s;
+}
+
+@media screen and (min-width: 996px) {
+  .card:hover {
+    width: 200%;
+  }
+}
+
+.card__image {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.card__image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7) 100%);
+}
+
+.card__content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 30px;
+}
+
+@media screen and (min-width: 996px) {
+  .card__content {
+    bottom: 100px;
+    transition: 0.2s;
+    transform: translateY(100%);
+  }
+
+  .card:hover .card__content {
+    bottom: 0;
+    transition: 0.2s;
+    transition-delay: 0.3s;
+    transform: translateY(0%);
+  }
+}
+
+.card__strapline {
+  margin: 0;
+  font-size: 14px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.card__title {
+  margin: 10px 0 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.card__description {
+  margin: 10px 0 0;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 996px) {
+  .card__description {
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.2s;
+  }
+
+  .card:hover .card__description {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.2s;
+    transition-delay: 0.3s;
+  }
+}
