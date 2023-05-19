@@ -1,11 +1,11 @@
 # Cards
 
-## Part 1
+## Part 2
 ### Default
-![Desktop screenshot of cards part 1](./Images/part-1.png)
+![Desktop screenshot of cards part 2](./Images/part-2.png)
 
 ### Hover
-![Desktop screenshot of cards part 1 in hover state](./Images/part-1--hover.png)
+![Desktop screenshot of cards part 2 in hover state](./Images/part-2--hover.png)
 
 ### Mobile
-![Mobile screenshot of cards part 1](./Images/part-1--mobile.png)
+![Mobile screenshot of cards part 2](./Images/part-2--mobile.png)
